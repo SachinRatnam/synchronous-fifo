@@ -65,7 +65,7 @@ module fifo_main(clk,rst,
 				
 			end
 	
-	// cout operation
+	// count operation
 	
 	always @(posedge clk,negedge rst)begin
 			if (!rst)
