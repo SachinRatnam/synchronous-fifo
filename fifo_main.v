@@ -73,8 +73,8 @@ module fifo_main(clk,rst,
 			else
 				begin
 					case({wr_en_i,rd_en_i})                 // when both read and write happen on same clock or no read and write happen count will not change
-						2'b01: count <= count + 1 ;     // for 1 read and no write 
-						2'b10: count <= count - 1 ;     // for 1 write and no read
+						2'b10: count <= count + 1 ;     // for 1 read and no write 
+						2'b01: count <= count - 1 ;     // for 1 write and no read
 					endcase
 						
 				end
